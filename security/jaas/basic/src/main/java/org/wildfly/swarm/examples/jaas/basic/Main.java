@@ -24,10 +24,10 @@ public class Main {
 
         swarm.fraction(new DatasourcesFraction()
                 .dataSource("MyDS", (ds) -> {
-                    ds.driverName("h2");
-                    ds.connectionUrl("jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE");
-                    ds.userName("sa");
-                    ds.password("sa");
+                    ds.driverName("postgresql");
+                    ds.connectionUrl("jdbc:postgresql://localhost:5432/test");
+                    ds.userName("test");
+                    ds.password("test");
                 })
         );
 
